@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights — WRO Advisory</title>
+  <meta name="description" content="Practical perspectives from WRO Advisory's senior advisors on HR consulting, employment standards, business growth, operational efficiency, and people strategy.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.png" alt="WRO Advisory">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html" class="btn btn--primary" style="padding:12px 28px;font-size:13px;">Get In Touch</a></li>
+      </ul>
+      <div class="nav__hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero__label">Insights &amp; Perspectives</div>
+      <h1>Executive Thinking on<br>What Matters Most.</h1>
+      <p>Practical perspectives from WRO Advisory's senior advisors on HR consulting, employment standards, business growth, operational efficiency, and building organizations that perform.</p>
+    </div>
+  </div>
+
+  <!-- FEATURED ARTICLE -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-label fade-up">Featured Insight</div>
+      <div class="fade-up" style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-gray);margin-top:32px;">
+        <div style="display:grid;grid-template-columns:1fr 1.2fr;">
+          <div style="background:var(--gradient-primary);padding:64px;display:flex;flex-direction:column;justify-content:space-between;min-height:420px;position:relative;overflow:hidden;">
+            <div>
+              <div style="background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:6px 16px;border-radius:50px;display:inline-block;margin-bottom:32px;">HR & People</div>
+              <h2 style="color:var(--white);font-size:clamp(24px,2.5vw,36px);line-height:1.3;margin-bottom:20px;">The Case for Fractional HR: Senior People Expertise Without the Full-Time Price Tag</h2>
+              <p style="color:rgba(255,255,255,0.75);font-size:16px;line-height:1.7;">Growing organizations face enterprise-level HR complexity on SMB budgets. A fractional HR Business Partner changes that equation entirely.</p>
+            </div>
+            <div style="margin-top:40px;">
+              <div style="color:rgba(255,255,255,0.5);font-size:13px;margin-bottom:16px;">June 2026 · 7 min read</div>
+              <a href="#" class="btn btn--primary">Read Insight →</a>
+            </div>
+            <!-- Decorative circle -->
+            <div style="position:absolute;right:-80px;top:-80px;width:300px;height:300px;border-radius:50%;border:2px solid rgba(255,255,255,0.06);"></div>
+          </div>
+          <div style="padding:64px;background:var(--white);">
+            <h3 style="color:var(--navy);margin-bottom:20px;font-size:22px;">Key Takeaways</h3>
+            <div style="display:flex;flex-direction:column;gap:20px;">
+              <div style="padding:20px;background:var(--gray);border-radius:var(--radius-sm);border-left:3px solid var(--gold);">
+                <p style="font-size:15px;color:var(--charcoal);">SMBs face the same HR complexity as enterprises — employment standards, pay equity, terminations, investigations — but rarely have the budget for a full-time CHRO.</p>
+              </div>
+              <div style="padding:20px;background:var(--gray);border-radius:var(--radius-sm);border-left:3px solid var(--gold);">
+                <p style="font-size:15px;color:var(--charcoal);">A fractional HR Business Partner brings C-suite-level people expertise exactly when you need it — embedded in your leadership team, aligned to your goals.</p>
+              </div>
+              <div style="padding:20px;background:var(--gray);border-radius:var(--radius-sm);border-left:3px solid var(--gold);">
+                <p style="font-size:15px;color:var(--charcoal);">Organizations that invest in HR infrastructure early avoid the costly reactive fixes — wrongful dismissal claims, compliance failures, toxic culture — that hit later.</p>
+              </div>
+            </div>
+            <a href="#" style="display:inline-flex;align-items:center;gap:8px;color:var(--royal-blue);font-weight:700;margin-top:32px;font-size:15px;">Read the Full Article <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="bg-gray">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:48px;">
+        <div class="section-label">Browse by Topic</div>
+        <h2 class="text-navy">All Insights</h2>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="fade-up" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:48px;">
+        <button onclick="filterInsights('all', this)" style="font-family:var(--font);font-weight:600;font-size:14px;padding:10px 24px;border-radius:50px;border:1.5px solid var(--royal-blue);background:var(--royal-blue);color:var(--white);cursor:pointer;transition:all 0.3s;" id="filter-all">All</button>
+        <button onclick="filterInsights('hr-people', this)" style="font-family:var(--font);font-weight:600;font-size:14px;padding:10px 24px;border-radius:50px;border:1.5px solid var(--border-gray);background:transparent;color:var(--slate);cursor:pointer;transition:all 0.3s;">HR &amp; People</button>
+        <button onclick="filterInsights('growth', this)" style="font-family:var(--font);font-weight:600;font-size:14px;padding:10px 24px;border-radius:50px;border:1.5px solid var(--border-gray);background:transparent;color:var(--slate);cursor:pointer;transition:all 0.3s;">Business Development</button>
+        <button onclick="filterInsights('efficiency', this)" style="font-family:var(--font);font-weight:600;font-size:14px;padding:10px 24px;border-radius:50px;border:1.5px solid var(--border-gray);background:transparent;color:var(--slate);cursor:pointer;transition:all 0.3s;">Efficiency</button>
+        <button onclick="filterInsights('technology', this)" style="font-family:var(--font);font-weight:600;font-size:14px;padding:10px 24px;border-radius:50px;border:1.5px solid var(--border-gray);background:transparent;color:var(--slate);cursor:pointer;transition:all 0.3s;">Technology</button>
+        <button onclick="filterInsights('leadership', this)" style="font-family:var(--font);font-weight:600;font-size:14px;padding:10px 24px;border-radius:50px;border:1.5px solid var(--border-gray);background:transparent;color:var(--slate);cursor:pointer;transition:all 0.3s;">Leadership</button>
+      </div>
+
+      <div class="insights-grid" id="insights-grid">
+        <!-- Article 1 -->
+        <div class="insight-card fade-up fade-up-delay-1" data-category="hr-people">
+          <div class="insight-card__img">
+            <span class="insight-card__tag">HR &amp; People</span>
+          </div>
+          <div class="insight-card__body">
+            <div class="insight-card__date">May 2026 · 6 min read</div>
+            <h3>Ontario Employment Standards: What Most Employers Are Getting Wrong Right Now</h3>
+            <p>ESA obligations around hours of work, vacation pay, and termination are more nuanced than most employers realize — and non-compliance is easier to stumble into than you think.</p>
+            <a href="#" style="display:inline-flex;align-items:center;gap:6px;color:var(--royal-blue);font-weight:600;font-size:14px;margin-top:20px;">Read More →</a>
+          </div>
+        </div>
+        <!-- Article 2 -->
+        <div class="insight-card fade-up fade-up-delay-2" data-category="growth">
+          <div class="insight-card__img">
+            <span class="insight-card__tag">Business Development</span>
+          </div>
+          <div class="insight-card__body">
+            <div class="insight-card__date">April 2026 · 7 min read</div>
+            <h3>Five Growth Levers Every Mid-Market CEO Should Pull</h3>
+            <p>Practical growth strategies from advisors who have helped mid-market organizations double revenue without doubling their cost base.</p>
+            <a href="#" style="display:inline-flex;align-items:center;gap:6px;color:var(--royal-blue);font-weight:600;font-size:14px;margin-top:20px;">Read More →</a>
+          </div>
+        </div>
+        <!-- Article 3 -->
+        <div class="insight-card fade-up fade-up-delay-3" data-category="technology">
+          <div class="insight-card__img">
+            <span class="insight-card__tag">Technology</span>
+          </div>
+          <div class="insight-card__body">
+            <div class="insight-card__date">April 2026 · 9 min read</div>
+            <h3>AI Adoption: What Separates the Winners from the Experimenters</h3>
+            <p>After two years of widespread AI experimentation, most organizations have little to show for it. Here's what the successful ones did differently.</p>
+            <a href="#" style="display:inline-flex;align-items:center;gap:6px;color:var(--royal-blue);font-weight:600;font-size:14px;margin-top:20px;">Read More →</a>
+          </div>
+        </div>
+        <!-- Article 4 -->
+        <div class="insight-card fade-up fade-up-delay-1" data-category="efficiency">
+          <div class="insight-card__img">
+            <span class="insight-card__tag">Efficiency</span>
+          </div>
+          <div class="insight-card__body">
+            <div class="insight-card__date">March 2026 · 5 min read</div>
+            <h3>The Hidden Cost of Poor Inventory Controls</h3>
+            <p>Shrinkage, overstock, and poor visibility don't just hurt margins — they erode trust and accountability across your entire operation. Here's how to close the gaps.</p>
+            <a href="#" style="display:inline-flex;align-items:center;gap:6px;color:var(--royal-blue);font-weight:600;font-size:14px;margin-top:20px;">Read More →</a>
+          </div>
+        </div>
+        <!-- Article 5 -->
+        <div class="insight-card fade-up fade-up-delay-2" data-category="hr-people">
+          <div class="insight-card__img">
+            <span class="insight-card__tag">HR &amp; People</span>
+          </div>
+          <div class="insight-card__body">
+            <div class="insight-card__date">February 2026 · 8 min read</div>
+            <h3>The HR Function of 2030: Strategic Partner or Cost Centre?</h3>
+            <p>HR is at a crossroads. Organizations that elevate HR to genuine strategic partnership will outperform those that don't — significantly. Here's how to get there.</p>
+            <a href="#" style="display:inline-flex;align-items:center;gap:6px;color:var(--royal-blue);font-weight:600;font-size:14px;margin-top:20px;">Read More →</a>
+          </div>
+        </div>
+        <!-- Article 6 -->
+        <div class="insight-card fade-up fade-up-delay-3" data-category="leadership">
+          <div class="insight-card__img">
+            <span class="insight-card__tag">Leadership</span>
+          </div>
+          <div class="insight-card__body">
+            <div class="insight-card__date">February 2026 · 6 min read</div>
+            <h3>The Quiet Crisis in Executive Leadership</h3>
+            <p>How the pressure to perform is undermining the reflective thinking that great leadership requires — and what every senior leader should do about it.</p>
+            <a href="#" style="display:inline-flex;align-items:center;gap:6px;color:var(--royal-blue);font-weight:600;font-size:14px;margin-top:20px;">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="bg-navy" style="padding:96px 0;">
+    <div class="container" style="max-width:720px;">
+      <div class="text-center fade-up">
+        <div class="section-label" style="justify-content:center;"><span style="color:var(--light-gold);letter-spacing:3px;font-size:12px;font-weight:700;text-transform:uppercase;">Stay Informed</span></div>
+        <h2 class="text-white" style="margin-top:16px;margin-bottom:20px;">Executive Insights,<br>Direct to Your Inbox.</h2>
+        <p style="color:rgba(255,255,255,0.7);margin-bottom:40px;">Join leaders who receive WRO Advisory's monthly perspectives on HR, people strategy, business growth, and operational performance.</p>
+        <form onsubmit="handleNewsletter(event)" style="display:flex;gap:16px;max-width:520px;margin:0 auto;flex-wrap:wrap;">
+          <input type="email" placeholder="Your email address" required style="flex:1;min-width:200px;font-family:var(--font);font-size:16px;padding:16px 20px;border-radius:50px;border:none;outline:none;color:var(--charcoal);">
+          <button type="submit" class="btn btn--primary" style="flex-shrink:0;">Subscribe</button>
+        </form>
+        <p style="color:rgba(255,255,255,0.4);font-size:13px;margin-top:16px;">No spam. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="padding:96px 0;">
+    <div class="container cta-section__inner">
+      <h2 class="text-white">Interested in Speaking With Our Team?</h2>
+      <p>Insights are a starting point. Let's have a direct conversation about your organization's specific challenges.</p>
+      <a href="contact.html" class="btn btn--primary" style="font-size:16px;padding:18px 48px;">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="logo.png" alt="WRO Advisory">
+          <p class="footer__tagline">Premium executive advisory services delivering strategic clarity, business growth, and measurable results.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="mailto:info@wroadvisory.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+        <div><div class="footer__col-title">Company</div><ul class="footer__links"><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+        <div><div class="footer__col-title">Services</div><ul class="footer__links"><li><a href="services.html">Human Resources</a></li><li><a href="services.html">Data Management</a></li><li><a href="services.html">Inventory Management</a></li><li><a href="services.html">Business Development</a></li><li><a href="services.html">Business Efficiency</a></li></ul></div>
+        <div><div class="footer__col-title">Contact</div><ul class="footer__links"><li><a href="contact.html">Get In Touch</a></li><li><a href="contact.html">Book a Consultation</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 WRO Advisory. All rights reserved.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    function filterInsights(category, btn) {
+      // Update buttons
+      document.querySelectorAll('#insights-grid + div button, [onclick^="filterInsights"]').forEach(b => {
+        b.style.background = 'transparent';
+        b.style.color = 'var(--slate)';
+        b.style.borderColor = 'var(--border-gray)';
+      });
+      // Highlight active — find all filter buttons
+      document.querySelectorAll('[onclick^="filterInsights"]').forEach(b => {
+        b.style.background = 'transparent';
+        b.style.color = 'var(--slate)';
+        b.style.borderColor = 'var(--border-gray)';
+      });
+      btn.style.background = 'var(--royal-blue)';
+      btn.style.color = 'var(--white)';
+      btn.style.borderColor = 'var(--royal-blue)';
+
+      // Filter cards
+      document.querySelectorAll('.insight-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓ Subscribed!';
+      btn.style.background = 'linear-gradient(135deg,#22C55E,#16A34A)';
+      setTimeout(() => {
+        btn.textContent = 'Subscribe';
+        btn.style.background = '';
+        e.target.reset();
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

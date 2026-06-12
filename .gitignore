@@ -1,0 +1,26 @@
+# Design/documentation files
+*.docx
+*.doc
+*.pptx
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment / secrets
+.env
+.env.local
+.env*.local
+
+# Build artifacts (if a build step is added later)
+dist/
+build/
+node_modules/

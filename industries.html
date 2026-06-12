@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries — WRO Advisory</title>
+  <meta name="description" content="WRO Advisory brings deep sector experience across financial services, healthcare, HR consulting, professional services, technology, and more.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .ind-card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-gray);
+      padding: 40px;
+      background: var(--white);
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .ind-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--royal-blue);
+    }
+    .ind-card__num {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .ind-card h3 { font-size: 22px; color: var(--navy); }
+    .ind-card p  { font-size: 15px; color: var(--slate); }
+    .ind-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .ind-card__tag {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--royal-blue);
+      background: rgba(0,87,217,0.08);
+      border-radius: 50px;
+      padding: 5px 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.png" alt="WRO Advisory">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html" class="btn btn--primary" style="padding:12px 28px;font-size:13px;">Get In Touch</a></li>
+      </ul>
+      <div class="nav__hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero__label">Industries We Serve</div>
+      <h1>Deep Sector Knowledge.<br>Cross-Industry Perspective.</h1>
+      <p>Our advisors combine sector-specific expertise with cross-industry insight — giving you both the depth to understand your context and the breadth to see beyond it.</p>
+    </div>
+  </div>
+
+  <!-- INDUSTRIES GRID -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:64px;">
+        <div class="section-label">Our Sectors</div>
+        <h2 class="text-navy">Where We Work</h2>
+        <p class="text-slate" style="max-width:580px;margin:20px auto 0;">WRO Advisory has delivered impactful engagements across 12+ industries. Our advisors bring firsthand sector experience — not just transferable frameworks.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;">
+        <div class="ind-card fade-up fade-up-delay-1">
+          <div class="ind-card__num">Sector 01</div>
+          <h3>HR Consulting &amp; Professional Services</h3>
+          <p>Strategic growth, operating model transformation, and talent strategy for HR consulting and professional services organizations navigating a competitive, technology-driven landscape.</p>
+          <div class="ind-card__tags">
+            <span class="ind-card__tag">HR Strategy</span>
+            <span class="ind-card__tag">Talent Management</span>
+            <span class="ind-card__tag">Growth Advisory</span>
+          </div>
+        </div>
+        <div class="ind-card fade-up fade-up-delay-2">
+          <div class="ind-card__num">Sector 02</div>
+          <h3>Food &amp; Beverage Services</h3>
+          <p>Operational efficiency, supply chain strategy, and growth advisory for food and beverage businesses navigating rising costs, shifting consumer preferences, and competitive market dynamics.</p>
+          <div class="ind-card__tags">
+            <span class="ind-card__tag">Supply Chain</span>
+            <span class="ind-card__tag">Operations</span>
+            <span class="ind-card__tag">Brand Growth</span>
+          </div>
+        </div>
+        <div class="ind-card fade-up fade-up-delay-3">
+          <div class="ind-card__num">Sector 03</div>
+          <h3>Hospitality</h3>
+          <p>Strategy, workforce optimization, and guest experience transformation for hotels, restaurants, and hospitality groups building resilient, high-performing service organizations.</p>
+          <div class="ind-card__tags">
+            <span class="ind-card__tag">Workforce Strategy</span>
+            <span class="ind-card__tag">Guest Experience</span>
+            <span class="ind-card__tag">Operations</span>
+          </div>
+        </div>
+        <div class="ind-card fade-up fade-up-delay-1">
+          <div class="ind-card__num">Sector 04</div>
+          <h3>Healthcare &amp; Life Sciences</h3>
+          <p>Operational transformation, strategy, and leadership development for healthcare providers, insurers, and life sciences organizations balancing clinical excellence with commercial performance.</p>
+          <div class="ind-card__tags">
+            <span class="ind-card__tag">Healthcare Strategy</span>
+            <span class="ind-card__tag">Operations</span>
+            <span class="ind-card__tag">Change Management</span>
+          </div>
+        </div>
+        <div class="ind-card fade-up fade-up-delay-2">
+          <div class="ind-card__num">Sector 05</div>
+          <h3>Retail &amp; Consumer</h3>
+          <p>Growth strategy, customer experience optimization, and digital transformation for retail and consumer brands navigating channel disruption and shifting consumer expectations.</p>
+          <div class="ind-card__tags">
+            <span class="ind-card__tag">Customer Strategy</span>
+            <span class="ind-card__tag">Omnichannel</span>
+            <span class="ind-card__tag">Brand Growth</span>
+          </div>
+        </div>
+        <div class="ind-card fade-up fade-up-delay-3">
+          <div class="ind-card__num">Sector 06</div>
+          <h3>Energy &amp; Resources</h3>
+          <p>Strategy, operational performance, and sustainability advisory for energy and resource companies managing the transition to a low-carbon future while maintaining commercial competitiveness.</p>
+          <div class="ind-card__tags">
+            <span class="ind-card__tag">Energy Transition</span>
+            <span class="ind-card__tag">Operations</span>
+            <span class="ind-card__tag">ESG Strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITY TABLE -->
+  <section class="bg-gray">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:48px;">
+        <div class="section-label">Capability Overview</div>
+        <h2 class="text-navy">Service Capabilities by Sector</h2>
+      </div>
+      <div class="fade-up" style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;background:var(--white);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-sm);">
+          <thead>
+            <tr style="background:var(--navy);">
+              <th style="text-align:left;padding:20px 24px;color:var(--white);font-size:14px;font-weight:600;min-width:180px;">Industry</th>
+              <th style="padding:20px 16px;color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Strategy</th>
+              <th style="padding:20px 16px;color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Growth</th>
+              <th style="padding:20px 16px;color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Performance</th>
+              <th style="padding:20px 16px;color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Risk</th>
+              <th style="padding:20px 16px;color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Technology</th>
+              <th style="padding:20px 16px;color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">People</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border-gray);">
+              <td style="padding:18px 24px;font-weight:600;color:var(--navy);font-size:15px;">HR Consulting</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-gray);background:var(--gray);">
+              <td style="padding:18px 24px;font-weight:600;color:var(--navy);font-size:15px;">Food &amp; Beverage</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-gray);">
+              <td style="padding:18px 24px;font-weight:600;color:var(--navy);font-size:15px;">Hospitality</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-gray);background:var(--gray);">
+              <td style="padding:18px 24px;font-weight:600;color:var(--navy);font-size:15px;">Healthcare</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-gray);">
+              <td style="padding:18px 24px;font-weight:600;color:var(--navy);font-size:15px;">Retail &amp; Consumer</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+            </tr>
+            <tr style="background:var(--gray);">
+              <td style="padding:18px 24px;font-weight:600;color:var(--navy);font-size:15px;">Energy &amp; Resources</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+              <td style="padding:18px 16px;text-align:center;color:var(--slate);font-size:18px;">◐</td>
+              <td style="padding:18px 16px;text-align:center;color:#22C55E;font-size:18px;">✓</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:13px;color:var(--slate);margin-top:12px;text-align:right;">✓ Full capability &nbsp; ◐ Selected capabilities</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-section__inner">
+      <h2 class="text-white">Don't See Your Industry?</h2>
+      <p>WRO Advisory's frameworks and expertise translate across sectors. Let's talk about your specific context.</p>
+      <a href="contact.html" class="btn btn--primary" style="font-size:16px;padding:18px 48px;">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="logo.png" alt="WRO Advisory">
+          <p class="footer__tagline">Premium executive advisory services delivering strategic clarity, business growth, and measurable results.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="mailto:info@wroadvisory.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+        <div><div class="footer__col-title">Company</div><ul class="footer__links"><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+        <div><div class="footer__col-title">Services</div><ul class="footer__links"><li><a href="services.html">Strategic Advisory</a></li><li><a href="services.html">Business Growth</a></li><li><a href="services.html">Performance</a></li><li><a href="services.html">Risk Management</a></li></ul></div>
+        <div><div class="footer__col-title">Contact</div><ul class="footer__links"><li><a href="contact.html">Get In Touch</a></li><li><a href="contact.html">Book a Consultation</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 WRO Advisory. All rights reserved.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
