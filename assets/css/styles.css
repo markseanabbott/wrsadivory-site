@@ -327,7 +327,6 @@ section { padding: 96px 0; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../img/skyline-overlay.jpg');
   background-size: cover;
   background-position: center bottom;
   opacity: 0.12;
