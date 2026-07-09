@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Testimonials — WRO Advisory</title>
+  <meta name="description" content="Real endorsements from clients and colleagues who have experienced WRO Advisory's approach to HR consulting, labour relations, and faculty grievance advisory firsthand.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .testimonial-featured {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 56px 64px;
+      box-shadow: var(--shadow-md);
+      border-left: 6px solid var(--gold);
+      position: relative;
+    }
+    @media (max-width: 700px) {
+      .testimonial-featured { padding: 36px 28px; }
+    }
+    .testimonial-featured__quote-mark {
+      font-size: 120px;
+      line-height: 0.7;
+      color: var(--gold);
+      font-family: Georgia, serif;
+      opacity: 0.25;
+      position: absolute;
+      top: 40px;
+      left: 48px;
+      user-select: none;
+    }
+    .testimonial-featured__body {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .testimonial-featured__body p {
+      margin-bottom: 20px;
+    }
+    .testimonial-featured__body p:last-child {
+      margin-bottom: 0;
+    }
+    .testimonial-featured__attr {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-gray);
+    }
+    .testimonial-featured__avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .testimonial-featured__avatar svg {
+      width: 28px;
+      height: 28px;
+    }
+    .testimonial-featured__name {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .testimonial-featured__title {
+      font-size: 14px;
+      color: var(--slate);
+      margin-top: 3px;
+    }
+    .testimonial-featured__badge {
+      margin-left: auto;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(212,168,63,0.1);
+      padding: 6px 14px;
+      border-radius: 20px;
+      flex-shrink: 0;
+    }
+    @media (max-width: 580px) {
+      .testimonial-featured__badge { display: none; }
+      .testimonial-featured__attr { flex-wrap: wrap; }
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 44px 48px;
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--royal-blue);
+      position: relative;
+    }
+    @media (max-width: 700px) {
+      .testimonial-card { padding: 32px 28px; }
+    }
+    .testimonial-card__quote-mark {
+      font-size: 80px;
+      line-height: 0.8;
+      color: var(--royal-blue);
+      font-family: Georgia, serif;
+      opacity: 0.15;
+      position: absolute;
+      top: 32px;
+      right: 40px;
+      user-select: none;
+    }
+    .testimonial-card__body {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--charcoal);
+      margin-bottom: 32px;
+    }
+    .testimonial-card__attr {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-gray);
+    }
+    .testimonial-card__avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .testimonial-card__avatar svg {
+      width: 24px;
+      height: 24px;
+    }
+    .testimonial-card__name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .testimonial-card__title {
+      font-size: 13px;
+      color: var(--slate);
+      margin-top: 2px;
+    }
+    .testimonial-card__source {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--royal-blue);
+      flex-shrink: 0;
+    }
+    @media (max-width: 500px) {
+      .testimonial-card__source { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.webp" alt="WRO Advisory">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="btn btn--primary" style="padding:12px 28px;font-size:13px;">Get In Touch</a></li>
+      </ul>
+      <div class="nav__hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero__label">Client Testimonials</div>
+      <h1>Real Voices.<br>Real Results.</h1>
+      <p>WRO Advisory builds lasting relationships grounded in candour, expertise, and results. Here is what clients and colleagues say about working with Victor.</p>
+    </div>
+  </div>
+
+  <!-- FEATURED TESTIMONIAL — PJ, PhD -->
+  <section class="bg-gray">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:48px;">
+        <div class="section-label">Faculty Grievance Advisory</div>
+        <h2 class="text-navy">Faculty Endorsement</h2>
+      </div>
+      <div class="testimonial-featured fade-up">
+        <div class="testimonial-featured__quote-mark">&ldquo;</div>
+        <div class="testimonial-featured__body">
+          <p>I want to offer my full endorsement for WRO Advisory and the grievance-support services offered for unionized academic employees. Navigating the grievance process is complex, technical, and often overwhelming, and there is no way I would have been able to manage it on my own. His guidance has been <strong>absolutely instrumental</strong>.</p>
+          <p>Throughout my preparation, he helped me understand the grievance process step-by-step, clarified the relevant articles in the Collective Agreement, and identified additional clauses I had not considered but that will strengthen my case. He consistently asked the right questions, offered thoughtful prompts, and helped me frame my arguments strategically. When I was developing materials and preparing my presentation, his insight and direction were invaluable.</p>
+          <p>Although I have not yet had my grievance hearing, I can say with confidence that I would not be nearly as prepared without his support. He has a rare ability to translate dense contractual language into clear, actionable strategy, and he brings both expertise and empathy to the process. For any professor, counsellor, or academic navigating a grievance, his services will be an exceptional resource.</p>
+          <p>I highly recommend WRO Advisory.</p>
+        </div>
+        <div class="testimonial-featured__attr">
+          <div class="testimonial-featured__avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div>
+            <div class="testimonial-featured__name">PJ, PhD</div>
+            <div class="testimonial-featured__title">Faculty Member &mdash; Grievance Advisory Client</div>
+          </div>
+          <div class="testimonial-featured__badge">Faculty Endorsement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL — Cyril Hayes -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:48px;">
+        <div class="section-label">HR &amp; Education</div>
+        <h2 class="text-navy">Colleague Endorsement</h2>
+      </div>
+      <div style="max-width:780px;margin:0 auto;">
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-card__quote-mark">&rdquo;</div>
+          <div class="testimonial-card__body">
+            Victor's extensive Human Resource background, combined with solid experience in Hospitality and Customer Service, give him a unique and invaluable perspective on the challenges that will be faced by students. In addition, his strong personal and communication skills allow him to make a lasting impression on those lucky enough to take part in his classes.
+          </div>
+          <div class="testimonial-card__attr">
+            <div class="testimonial-card__avatar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="testimonial-card__name">Cyril Hayes</div>
+              <div class="testimonial-card__title">Professor, Hospitality Tourism &amp; Recreation &mdash; Georgian College &mdash; October 2013</div>
+            </div>
+            <div class="testimonial-card__source">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn Recommendation
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-section__inner">
+      <h2>Ready to Work Together?</h2>
+      <p>Experience the WRO Advisory difference. Let's start with a conversation about where you are and where you need to go.</p>
+      <a href="contact.html" class="btn btn--primary" style="font-size:16px;padding:18px 48px;">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="logo.webp" alt="WRO Advisory">
+          <p class="footer__tagline">Premium executive advisory services delivering strategic clarity, business growth, and measurable results for forward-thinking organizations.</p>
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/victor-wroblewski-m-h-r/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="mailto:info@wroadvisory.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="insights.html">Insights</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Services</div>
+          <ul class="footer__links">
+            <li><a href="services.html">Human Resources</a></li>
+            <li><a href="faculty-grievance.html">Faculty Grievance</a></li>
+            <li><a href="services.html">Data Management</a></li>
+            <li><a href="services.html">Business Development</a></li>
+            <li><a href="services.html">Business Efficiency</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <ul class="footer__links">
+            <li><a href="contact.html">Get In Touch</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="contact.html">Book a Consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 WRO Advisory. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
