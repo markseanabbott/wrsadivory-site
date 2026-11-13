@@ -19,7 +19,7 @@
 ### Blocking / Functional
 
 - [x] **Missing hero background image** — removed dead CSS reference to `assets/img/skyline-overlay.jpg` in `assets/css/styles.css`.
-- [ ] **Contact form backend** — form currently shows a success state but sends nothing. Integrate Formspree so submissions actually arrive at info@wroadvisory.com. (Deferred — needs Formspree account setup.)
+- [x] **Contact form backend** — simplified contact page to email-only; removed form and "Ways to Work" section. Email links to info@wroadvisory.com. LinkedIn contact info now links to Victor's profile.
 
 ### Cleanup
 
@@ -35,7 +35,7 @@
 
 ## Phase 3 — Outstanding / Future
 
-- [ ] **Contact form backend** — set up Formspree account, add form ID to `contact.html`, wire up real submission handling.
+- [x] **Contact form** — replaced with email-only contact page.
 - [ ] **Hero skyline image** — optionally add a real `assets/img/skyline-overlay.jpg` (subtle overlay, opacity 0.12) to enhance the hero section.
 - [ ] **Insights content** — "Read More" links on `insights.html` all point to `#`. Add real article pages or link to external publications.
 - [ ] **Contact page CTAs** — "Book a Call", "Learn More", "Explore Options" buttons on `contact.html` point to `#`. Wire up to Calendly or relevant pages.

@@ -76,21 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(update);
   }
 
-  /* --- Form submit (demo) --- */
-  const form = document.querySelector('.contact-form');
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = 'Message Sent!';
-    btn.disabled = true;
-    btn.style.background = 'linear-gradient(135deg, #28a745, #20c050)';
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.disabled = false;
-      btn.style.background = '';
-      form.reset();
-    }, 3500);
-  });
 
 });
